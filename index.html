@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contatos</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <section class="container">
+        <div>
+            <h1>Preencha para cadastrar-se</h1>
+            <form id="form-dados">
+                <input type="text" required id="nome" placeholder="Digite seu nome." class="nome">
+                <input type="tel" required id="telefone" placeholder="Digite seu número." class="telefone"><br>
+                <button type="submit" id="btnCadastro">
+                    <bold>Cadastre-se</bold>
+                </button>
+            </form>
+            <h2>Agenda</h2>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <td id="nomeCadastrado">---</td>
+                    <td id="telefoneCadastrado">---</td>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
