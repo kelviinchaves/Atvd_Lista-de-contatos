@@ -5,7 +5,6 @@ let linhas = '';
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-
     adicionaLinha();
     atualizaTabela();
 
@@ -19,8 +18,8 @@ function adicionaLinha() {
         alert(`O nome ${inputNome.value} já foi inserido`);
     } else {
 
-        nome.push(nome.value);
-        tel.push(tel.value);
+        nome.push(inputNome.value);
+        tel.push(inputTelefone.value);
 
         linhas +=
             `<tr>
